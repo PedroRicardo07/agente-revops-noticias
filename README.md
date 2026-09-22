@@ -4,8 +4,6 @@ ESTE RADAR ACOMPANHA AS NOTICIAS DO DIA, SKILLS E PROJETOS SOBRE INTELIGENCIA AR
 
 **Briefing de hoje:** https://pedroricardo07.github.io/agente-revops-noticias/
 
-*(o endereço acima passa a funcionar depois de ligar o GitHub Pages em Settings → Pages, apontando para a branch `main`, pasta raiz)*
-
 ## Por que eu faço isso
 
 Estou construindo repertório para migrar de setor. Quero entender o que as empresas estão de fato fazendo com IA em receita, ganhar vocabulário e ter caso e argumento na ponta da língua. Em segundo plano, quero saber que ferramentas, stacks e competências o mercado está pedindo.
