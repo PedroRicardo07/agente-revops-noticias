@@ -47,7 +47,7 @@ Outra fonte só entra se trouxer caso real, for veículo ou empresa identificáv
 3. confere o link da fonte original em cada achado — número sem link é descartado, não é estimado
 4. compara com o briefing de ontem e corta repetição (se tem fato novo, diz qual é)
 5. ordena: caso real e projeto que deu certo na frente, ferramenta e skill depois
-6. salva em `briefings/AAAA-MM-DD.md`
+6. salva em `diario/AAAA-MM-DD.md`
 
 ## Como é o briefing
 
@@ -75,4 +75,4 @@ Cada notícia tem: título curto em português, 2 a 4 frases (o que aconteceu, q
 
 - `RADAR.md` — a especificação completa do radar
 - `CLAUDE.md` — a memória do projeto e as regras técnicas
-- `briefings/` — um arquivo por dia
+- `diario/` — um arquivo por dia

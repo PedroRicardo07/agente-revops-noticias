@@ -38,7 +38,7 @@ Todo dia, o time de pesquisa:
 3. confere, em cada achado, que existe fonte original com link — número sem link é descartado, não estimado;
 4. compara com o briefing do dia anterior e corta o que é repetição, salvo quando houver fato novo (e então diz qual é o fato novo);
 5. ordena por relevância para quem está entrando na área: caso real e projeto que deu certo vêm primeiro; ferramenta em uso e skill exigida vêm depois;
-6. escreve o briefing do dia e salva em `briefings/AAAA-MM-DD.md`.
+6. escreve o briefing do dia e salva em `diario/AAAA-MM-DD.md`.
 
 ## Resultado
 

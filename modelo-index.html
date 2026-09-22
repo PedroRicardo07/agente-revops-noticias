@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITULO}}</title>
+<style>
+  :root {
+    --fundo: #ffffff;
+    --texto: #1a1a1a;
+    --suave: #5c5c5c;
+    --linha: #e2e2e2;
+    --link: #0b5ed7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #14161a;
+      --texto: #eceff4;
+      --suave: #a0a6b0;
+      --linha: #2c3038;
+      --link: #79aefc;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px 64px;
+    background: var(--fundo);
+    color: var(--texto);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; line-height: 1.3; margin: 32px 0 8px; }
+  .data { color: var(--suave); font-size: 0.95rem; margin: 0 0 32px; }
+  a { color: var(--link); }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  hr { border: 0; border-top: 1px solid var(--linha); margin: 40px 0 24px; }
+  .anteriores { font-size: 0.95rem; }
+  footer { color: var(--suave); font-size: 0.85rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>{{TITULO}}</h1>
+  <p class="data">{{DATA}}</p>
+
+  {{BRIEFING}}
+
+  <hr>
+
+  <h2>Dias anteriores</h2>
+  <div class="anteriores">
+    {{ANTERIORES}}
+  </div>
+
+  <footer>
+    Radar diário gerado por um time de agentes. Todo item tem link para a fonte original; o que não foi verificado não é publicado.
+  </footer>
+
+</main>
+</body>
+</html>
