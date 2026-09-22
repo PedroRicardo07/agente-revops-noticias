@@ -2,7 +2,9 @@
 
 ESTE RADAR ACOMPANHA AS NOTICIAS DO DIA, SKILLS E PROJETOS SOBRE INTELIGENCIA ARTIFICIAL APLICADA A GESTÃO COMERCIAL E REVOPS .
 
-**Briefing de hoje:** [URL do GitHub Pages]
+**Briefing de hoje:** https://pedroricardo07.github.io/agente-revops-noticias/
+
+*(o endereço acima passa a funcionar depois de ligar o GitHub Pages em Settings → Pages, apontando para a branch `main`, pasta raiz)*
 
 ## Por que eu faço isso
 
@@ -71,8 +73,27 @@ Cada notícia tem: título curto em português, 2 a 4 frases (o que aconteceu, q
 - [ ] todo termo técnico explicado na primeira aparição
 - [ ] cabe em uma página
 
+## O time
+
+Cinco agentes, em `.claude/agents/`, coordenados pela Skill `radar`:
+
+- **pesquisador** procura e anota, com link em tudo
+- **verificador** reabre cada link e confere se o anotado está mesmo lá
+- **redator** escreve o briefing e monta a página
+- **colunista** transforma o dia num post curto de humor ácido
+- **guarda** lê tudo antes de publicar e decide: PODE PUBLICAR ou NÃO PUBLIQUE
+
+Nada é publicado sem o sim do guarda. Roda todo dia às 8:30, ou quando eu peço.
+
 ## Arquivos
 
 - `RADAR.md` — a especificação completa do radar
 - `CLAUDE.md` — a memória do projeto e as regras técnicas
-- `diario/` — um arquivo por dia
+- `.claude/agents/` — os cinco agentes
+- `.claude/skills/radar/` — a Skill que coordena o time
+- `fontes/` — as anotações brutas de cada dia, com link
+- `verificacao/` — a conferência de cada link
+- `diario/` — o briefing, um arquivo por dia
+- `coluna/` — o post de humor do dia, em `.md` e `.docx`
+- `modelo-index.html` e `index.html` — o modelo da página e a página do dia
+- `scripts/gerar-docx.js` — monta o `.docx` da coluna a partir do `.md`

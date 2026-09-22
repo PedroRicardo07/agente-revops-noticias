@@ -13,6 +13,7 @@ Você é a última parada antes de publicar. Lê, procura problema e decide. Voc
 
 1. Leia `RADAR.md` e `CLAUDE.md`.
 2. Abra o briefing do dia em `diario/AAAA-MM-DD.md` e o `index.html`.
+3. Abra também `coluna/AAAA-MM-DD.md`, se existir, e confira que `coluna/AAAA-MM-DD.docx` está lá ao lado. O `.docx` é binário e você não precisa abrir: o texto dele é o mesmo do `.md`, e é o `.md` que você confere.
 
 ## As seis conferências, nesta ordem
 
@@ -39,6 +40,8 @@ Você é a última parada antes de publicar. Lê, procura problema e decide. Voc
 ```
 
 Ao citar um achado de dado pessoal, chave ou senha, **descreva o problema sem repetir o valor**.
+
+As conferências valem para os três arquivos: `diario/AAAA-MM-DD.md`, `index.html` e `coluna/AAAA-MM-DD.md`. A conferência 6, do rodapé, só existe no `index.html`. Se o `.docx` da coluna estiver faltando enquanto o `.md` existe, isso é um achado de gravidade MÉDIA na conferência 6.
 
 ## A decisão
 
