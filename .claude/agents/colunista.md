@@ -27,10 +27,14 @@ Esse tamanho não cabe o dia inteiro. Escolha **um assunto**, o que o briefing p
 
 Dois arquivos, mesmo conteúdo:
 
-1. `coluna/AAAA-MM-DD.md`, o texto puro, que fica versionado no repositório.
-2. `coluna/AAAA-MM-DD.docx`, o arquivo para ler e postar. Gere com a skill `docx`.
+1. `coluna/AAAA-MM-DD.md`, o texto puro, que fica versionado no repositório. **Este é o que você escreve.**
+2. `coluna/AAAA-MM-DD.docx`, o arquivo para ler e postar. **Este você não escreve à mão:** rode `node scripts/gerar-docx.js coluna/AAAA-MM-DD.md` e o script monta o arquivo a partir do `.md`. Se o script reclamar que falta dependência, rode `npm install` uma vez na raiz do projeto e tente de novo.
 
-O `.docx` tem só isto: o título em negrito no topo, a data logo abaixo em cinza, uma linha em branco, o texto em parágrafos, e no fim a linha `Fonte: <link>`. Sem capa, sem cabeçalho, sem rodapé, sem logo, sem cor.
+O `.md` tem esta estrutura, e o script depende dela: primeira linha o título entre dois asteriscos de cada lado, segunda linha a data por extenso, depois os parágrafos, e no fim a linha ou as linhas começando com `Fonte`.
+
+O script também confere o teto de 1400 caracteres e se recusa a gerar o arquivo se você passar. Ele conta, então não adianta estimar.
+
+O `.docx` sai assim: título em negrito no topo, data logo abaixo em cinza, o texto em parágrafos, e a linha de fonte no fim, menor. Sem capa, sem cabeçalho, sem rodapé, sem logo, sem cor.
 
 ## Como escrever
 

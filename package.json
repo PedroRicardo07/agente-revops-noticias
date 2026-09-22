@@ -1,0 +1,12 @@
+{
+  "name": "meu-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Radar diário de IA aplicada a RevOps",
+  "scripts": {
+    "coluna": "node scripts/gerar-docx.js"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
